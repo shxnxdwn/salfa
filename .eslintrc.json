@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "@typescript-eslint/recommended",
+    "plugin:react/recommended"
+  ],
+  "rules": {
+    "comma-dangle": ["error", "never"],
+    "object-curly-spacing": ["error", "always"],
+    "react/jsx-curly-spacing": ["error", {"when": "always"}]
+  }
+}

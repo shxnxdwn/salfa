@@ -1,0 +1,4 @@
+.filterGroup {
+  display: flex;
+  gap: var(--spacing-md);
+}

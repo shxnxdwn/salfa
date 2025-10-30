@@ -1,0 +1,15 @@
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.formGroup label {
+  font-weight: 600;
+  color: var(--color-text-secondary);
+}
+
+.error {
+  font-size: var(--font-size-sm);
+  color: var(--color-danger);
+}

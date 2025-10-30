@@ -1,0 +1,27 @@
+.actionButton {
+  cursor: pointer;
+  transition: transform var(--transition-base);
+}
+
+.actionButton:active {
+  transform: scale(0.95);
+}
+
+.icon {
+  font-size: 24px;
+  color: var(--color-text-secondary);
+  transition:
+    color var(--transition-base),
+    transform var(--transition-base),
+    fill var(--transition-base);
+}
+
+.actionButton:hover .icon {
+  color: var(--color-text-primary);
+  transform: scale(1.1);
+}
+
+.actionButton.liked .icon {
+  color: var(--color-like);
+  fill: var(--color-like);
+}
