@@ -36,9 +36,9 @@ export const useProductForm = (product?: Product) => {
       stock: product?.stock ?? 50,
       thumbnail:
         product?.thumbnail ??
-        'https://i.dummyjson.com/data/products/1/thumbnail.jpg',
+        'https://dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/thumbnail.webp',
       images: product?.images ?? [
-        'https://i.dummyjson.com/data/products/1/1.jpg'
+        'https://dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/thumbnail.webp'
       ]
     };
 
