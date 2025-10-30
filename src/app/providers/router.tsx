@@ -1,18 +1,18 @@
-import { createBrowserRouter, Navigate, Outlet } from 'react-router-dom';
+import { createHashRouter, Navigate, Outlet } from 'react-router-dom';
+import { ProductListPage } from '@pages/ProductListPage';
 import { ProductDetailsPage } from '@pages/ProductDetailsPage';
 import { CreateProductPage } from '@pages/CreateProductPage';
 import { EditProductPage } from '@pages/EditProductPage';
 import { PageLayout } from '@shared/view/PageLayout';
-import { ProductListPage } from '@pages/ProductListPage';
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
   {
     path: '/',
     element: <PageLayout />,
     children: [
       {
         index: true,
-        element: <Navigate to="/products" replace />
+        element: <Navigate to="/products" replace />,
       },
       {
         path: 'products',
@@ -20,22 +20,22 @@ export const router = createBrowserRouter([
         children: [
           {
             index: true,
-            element: <ProductListPage />
+            element: <ProductListPage />,
           },
           {
             path: ':id',
-            element: <ProductDetailsPage />
+            element: <ProductDetailsPage />,
           },
           {
             path: ':id/edit',
-            element: <EditProductPage />
-          }
-        ]
+            element: <EditProductPage />,
+          },
+        ],
       },
       {
         path: 'create-product',
-        element: <CreateProductPage />
-      }
-    ]
-  }
+        element: <CreateProductPage />,
+      },
+    ],
+  },
 ]);
